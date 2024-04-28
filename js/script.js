@@ -82,6 +82,10 @@ window.onclick = function (event) {
 //swiper-1
 let swiperHero = new Swiper(".swiper-hero", {
   spaceBetween: 0,
+  	autoplay: {
+		delay: 5000,
+		disableOnInteraction: true,
+	},
   loop: true,
   	pagination: {
 		el: '.custom-pagination', // Use your custom pagination selector
@@ -103,6 +107,10 @@ let swiperHero = new Swiper(".swiper-hero", {
 });
 let swiperWhy = new Swiper(".swiper-why", {
   spaceBetween: 40,
+  	autoplay: {
+		delay: 6000,
+		disableOnInteraction: true,
+	},
   loop: true,
   pagination: {
     el: ".custom-pagination", // Use your custom pagination selector
@@ -122,6 +130,10 @@ let swiperWhy = new Swiper(".swiper-why", {
 });
 let swiperTestimonial = new Swiper(".swiper-testimonial", {
   spaceBetween: 0,
+  	autoplay: {
+		delay: 7000,
+		disableOnInteraction: true,
+	},
   loop: true,
   centeredSlides: true,
    navigation: {
@@ -140,13 +152,17 @@ let swiperTestimonial = new Swiper(".swiper-testimonial", {
     },
   },
 });
-let swiperVideo = new Swiper(".swiper-video", {
-  spaceBetween: 10,
-  loop: false,
-  pagination: {
-    el: ".custom-pagination", // Use your custom pagination selector
-    clickable: true, // Enable bullet click
-  },
+let swiperexplore = new Swiper(".swiper-explore", {
+  spaceBetween: 20,
+  	autoplay: {
+		delay: 7000,
+		disableOnInteraction: true,
+	},
+  loop: true,
+   navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -155,11 +171,51 @@ let swiperVideo = new Swiper(".swiper-video", {
       slidesPerView: 2,
     },
     992: {
-      slidesPerView: 3,
+      slidesPerView: 4,
+    },
+  },
+});
+let swiperhistory_moile = new Swiper(".history_moile", {
+  	autoplay: {
+		delay: 7000,
+		disableOnInteraction: true,
+	},
+  loop: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
     },
   },
 });
 
+    var swiper2 = new Swiper('.swiper-secondary', {
+      spaceBetween: 125,
+      	autoplay: {
+		delay: 5000,
+		disableOnInteraction: true,
+	},
+        slidesPerView: 3,
+      watchSlidesVisibility: true,
+         clickable: true,
+    });
+    let swipernewsroom = new Swiper(".swiper-newsroom", {
+      spaceBetween: 0,
+      	autoplay: {
+		delay: 5000,
+		disableOnInteraction: true,
+	},
+    clickable: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+  },
+ thumbs: {
+    swiper: swiper2,
+  }
+});
+// swipernewsroom.controller.control = swiper2;
+      // swiper2.controller.control = swipernewsroom;
 // swiper
 
 // whatsapp
@@ -281,3 +337,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // counter
+
+// scroll top
+  window.onload = function() {
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    window.onscroll = function() {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopBtn.style.display = "block";
+      } else {
+        scrollToTopBtn.style.display = "none";
+      }
+    }
+
+    scrollToTopBtn.onclick = function() {
+      topFunction();
+    };
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  };
+
+// scroll top

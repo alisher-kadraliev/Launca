@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LauncaDental</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <!-- animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- animation -->
+</head>
+
+<body>
+    <!-- Navbar Section Start bg-white -->
+
+    <div class="ud-header flex w-full items-center bg-white max-lg:bg-primary py-1">
+        <div class="container">
+            <div class="relative -mx-4 flex items-center justify-between">
+                <div class="w-72 max-w-full px-4 max-lg:px-0">
+                    <a href="index.html" class="navbar-logo block w-full py-5 max-lg:hidden">
+                        <img src="https://cdnus.globalso.com/launcadental/logo.png" alt="logo"
+                            class="header-logo w-full" />
+                    </a>
+                    <a href="index.html" class="navbar-logo block w-full py-5 lg:hidden">
+                        <img src="https://www.launcadental.com/uploads/index_logo.png" alt="logo"
+                            class="header-logo w-full" />
+                    </a>
+                </div>
+                <div class="flex w-full items-center justify-between px-4">
+                    <div>
+                        <button id="navbarToggler"
+                            class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden">
+                            <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
+                            <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
+                            <span class="relative my-[6px] block h-[2px] w-[30px] bg-white"></span>
+                        </button>
+                        <nav id="navbarCollapse"
+                            class="absolute right-4 top-full z-50 max-lg:overflow-scroll hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg  lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none  xl:px-6">
+                            <ul class="block lg:flex 2xl:ml-20 ">
+                                <li class="group relative">
+                                    <a href="#home"
+                                        class="ud-menu-scroll uppercase mx-8 flex py-2 text-base font-light text-[#1f1f1f] upper max-lg:text-[#000!important] group-hover:text-black  lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:font-medium">
+                                        Home
+                                    </a>
+                                </li>
+
+                                <li class="submenu-item group relative">
+                                    <a href="products.html"
+                                        class="relative mx-8 flex items-center justify-between py-2 text-base font-light text-[#1f1f1f] upper max-lg:text-[#000!important] group-hover:text-black  lg:ml-8 lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:group-hover:font-medium xl:ml-10">
+                                        Products
+
+                                        <svg class="ml-2 fill-current" width="16" height="20" viewBox="0 0 16 20"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z" />
+                                        </svg>
+                                    </a>
+                                    <div
+                                        class="submenu relative left-0 z-50 top-full hidden w-full rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full">
+                                        <a href="product.html"
+                                            class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  ">
+                                            product
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="submenu-item group relative">
+                                    <a href="services.html"
+                                        class="relative mx-8 flex items-center justify-between py-2 text-base font-light text-[#1f1f1f] upper max-lg:text-[#000!important] group-hover:text-black  lg:ml-8 lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:group-hover:font-medium xl:ml-10">
+                                        Company
+
+                                        <svg class="ml-2 fill-current" width="16" height="20" viewBox="0 0 16 20"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z" />
+                                        </svg>
+                                    </a>
+                                    <div
+                                        class="submenu relative left-0 z-50 top-full hidden w-full rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full">
+                                        <a href="about.html"
+                                            class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  ">
+                                            About Us
+                                        </a>
+                                        <a href="newsroom.html"
+                                            class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  ">
+                                            Newsroom
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="submenu-item group relative">
+                                    <a href="support.html"
+                                        class="relative mx-8 flex items-center justify-between py-2 text-base font-light text-[#1f1f1f] upper max-lg:text-[#000!important] group-hover:text-black  lg:ml-8 lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:group-hover:font-medium xl:ml-10">
+                                        support
+
+                                        <svg class="ml-2 fill-current" width="16" height="20" viewBox="0 0 16 20"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M7.99999 14.9C7.84999 14.9 7.72499 14.85 7.59999 14.75L1.84999 9.10005C1.62499 8.87505 1.62499 8.52505 1.84999 8.30005C2.07499 8.07505 2.42499 8.07505 2.64999 8.30005L7.99999 13.525L13.35 8.25005C13.575 8.02505 13.925 8.02505 14.15 8.25005C14.375 8.47505 14.375 8.82505 14.15 9.05005L8.39999 14.7C8.27499 14.825 8.14999 14.9 7.99999 14.9Z" />
+                                        </svg>
+                                    </a>
+                                    <div
+                                        class="submenu relative left-0 z-50 top-full hidden w-full rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full">
+                                        <a href="scanner.html"
+                                            class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  ">
+                                            Scanner
+                                        </a>
+                                        <a href="training.html"
+                                            class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  ">
+                                            Training
+                                        </a>
+                                        <a href="troubleshooting.html"
+                                            class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  ">
+                                            Trouble Shooting
+                                        </a>
+                                        <a href="download.html"
+                                            class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  ">
+                                            Download
+                                        </a>
+                                        <a href="faq.html"
+                                            class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary  ">
+                                            FAQs
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="group relative">
+                                    <a href="blogs.html"
+                                        class="ud-menu-scroll mx-8 flex py-2 text-base font-light text-[#1f1f1f] upper max-lg:text-[#000!important] group-hover:text-black  lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:font-medium xl:ml-10">
+                                        Blog
+                                    </a>
+                                </li>
+                                <li class="group relative">
+                                    <a href="contact.html"
+                                        class="ud-menu-scroll uppercase mx-8 flex py-2 text-base font-light text-[#1f1f1f] upper max-lg:text-[#000!important] group-hover:text-black  lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:group-hover:font-medium  xl:ml-10">
+                                        Contact Us
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="flex items-center justify-end pr-16 lg:pr-0">
+                        <a href="" class="bg-secondary rounded-lg text-white p-1 mr-3 max-sm:hidden">Request Demo</a>
+                        <div class="">
+                            <div class="dropdown border rounded-full">
+                                <button onclick="openLangMenu()"
+                                    class="dropdown-button group italic text-black max-md:text-white hover:text-primary rounded py-2 px-4 text-base border-none cursor-pointer flex flex-row items-center justify-center gap-2 font-semibold max-lg:hover:text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="w-5 h-5 group-hover:text-primary max-lg:group-hover:text-white pointer-events-none max-lg:hidden"
+                                        viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM9.71002 19.6674C8.74743 17.6259 8.15732 15.3742 8.02731 13H4.06189C4.458 16.1765 6.71639 18.7747 9.71002 19.6674ZM10.0307 13C10.1811 15.4388 10.8778 17.7297 12 19.752C13.1222 17.7297 13.8189 15.4388 13.9693 13H10.0307ZM19.9381 13H15.9727C15.8427 15.3742 15.2526 17.6259 14.29 19.6674C17.2836 18.7747 19.542 16.1765 19.9381 13ZM4.06189 11H8.02731C8.15732 8.62577 8.74743 6.37407 9.71002 4.33256C6.71639 5.22533 4.458 7.8235 4.06189 11ZM10.0307 11H13.9693C13.8189 8.56122 13.1222 6.27025 12 4.24799C10.8778 6.27025 10.1811 8.56122 10.0307 11ZM14.29 4.33256C15.2526 6.37407 15.8427 8.62577 15.9727 11H19.9381C19.542 7.8235 17.2836 5.22533 14.29 4.33256Z">
+                                        </path>
+                                    </svg>
+
+                                    TR
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                        class="w-5 h-5 pointer-events-none group-hover:fill-primary max-md:fill-white max-lg:group-hover:fill-white"
+                                        viewBox="0 0 24 24" fill="black">
+                                        <path
+                                            d="M11.9999 13.1714L16.9497 8.22168L18.3639 9.63589L11.9999 15.9999L5.63599 9.63589L7.0502 8.22168L11.9999 13.1714Z">
+                                        </path>
+                                    </svg>
+                                </button>
+                                <div id="dropdown"
+                                    class="dropdown-content [&.show]:block translate-y-2 rounded hidden absolute bg-[#f1f1f1] w-[150px] max-w-[260px] overflow-auto shadow-xl z-10">
+                                    <a href=""
+                                        class="text-black flex flex-row items-start justify-start gap-2 py-2 px-4 text-sm hover:bg-primary font-semibold">English
+                                    </a>
+                                    <a href=""
+                                        class="text-black flex flex-row items-start justify-start gap-2 py-2 px-4 text-sm hover:bg-primary font-semibold">Русский
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Navbar Section End bg-transparent -->
+    <!--thumb page  -->
+    <section class="bg-[url('img/thumbPage/e9699169.webp')] bg-center bg-cover" data-aos="zoom-out-up">
+        <h1 class="text-center text-[72px] font-bold uppercase max-lg:text-xl py-52 max-lg:py-10 text-white">FAQS</h1>
+        <div class="flex flex-row bg-[#f7f7f7] gap-1 py-2 mx-auto justify-center items-center">
+            <a href="/" class="text-gray-400">Home </a>
+            <span class="text-gray-400"> - </span>
+            <a href="/" class="text-gray-400">FAQS</a>
+        </div>
+    </section>
+    <!--thumb page  -->
+
+
+
+    <section class="my-20" data-aos="zoom-out-up">
+        <div class="container">
+            <!-- component -->
+            <div class=" mx-auto px-5 bg-white ">
+                <div class="flex flex-col items-center"> 
+                    <h2 class="font-bold text-3xl mt-5 max-lg:text-center max-lg:text-xl text-primary tracking-tight">
+                        General Information
+                    </h2>
+                </div>
+                <div class="grid divide-y divide-neutral-200 mx-auto mt-8">
+                    <div class="py-5">
+                        <details class="group border p-6">
+                            <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                                <span> What is a SAAS platform?</span>
+                                <span class="transition group-open:rotate-180">
+                                    <svg fill="none" height="24" shape-rendering="geometricPrecision"
+                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                        <path d="M6 9l6 6 6-6"></path>
+                                    </svg>
+                                </span>
+                            </summary>
+                            <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                                SAAS platform is a cloud-based software service that allows users to access
+                                and use a variety of tools and functionality.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <div class="bg-primary">
+        <footer class="py-10 text-base-content container" data-aos="zoom-out-up">
+            <div class="flex flex-col gap-2">
+                <div class="footer">
+                    <div class="gap-10">
+                        <aside>
+                            <a href="">
+                                <img src="https://cdnus.globalso.com/launcadental/footer_logo.png"
+                                    class="w-[300px] mb-10" alt="footer logo">
+                            </a>
+                        </aside>
+                        <div class="flex justify-between gap-52 max-lg:gap-10">
+                            <nav class="flex flex-col gap-3">
+                                <h6 class="text-xl text-white font-bold">Menü</h6>
+                                <a href=""
+                                    class="text-white hover:text-secondary transition-all duration-300 easy-out text-[14px]">Anasayfa</a>
+                                <a href=""
+                                    class="text-white hover:text-secondary transition-all duration-300 easy-out text-[14px]">Turlar</a>
+                                <a href=""
+                                    class="text-white hover:text-secondary transition-all duration-300 easy-out text-[14px]">S.S.S</a>
+                                <a href=""
+                                    class="text-white hover:text-secondary transition-all duration-300 easy-out text-[14px]">Galeri</a>
+
+                            </nav>
+                            <nav class="flex flex-col gap-3">
+                                <h6 class="text-xl text-white font-bold">Menü</h6>
+                                <a href=""
+                                    class="text-white hover:text-secondary transition-all duration-300 easy-out text-[14px]">Anasayfa</a>
+                                <a href=""
+                                    class="text-white hover:text-secondary transition-all duration-300 easy-out text-[14px]">Turlar</a>
+                                <a href=""
+                                    class="text-white hover:text-secondary transition-all duration-300 easy-out text-[14px]">S.S.S</a>
+                                <a href=""
+                                    class="text-white hover:text-secondary transition-all duration-300 easy-out text-[14px]">Galeri</a>
+
+                            </nav>
+                        </div>
+                        <div class="flex justify-between gap-52 max-lg:gap-10">
+                            <nav class="flex flex-col gap-3">
+                                <h6 class="text-xl text-white font-bold">Menü</h6>
+                                <a href=""
+                                    class="text-white hover:text-secondary transition-all duration-300 easy-out text-[14px]">Anasayfa</a>
+                                <a href=""
+                                    class="text-white hover:text-secondary transition-all duration-300 easy-out text-[14px]">Turlar</a>
+                                <a href=""
+                                    class="text-white hover:text-secondary transition-all duration-300 easy-out text-[14px]">S.S.S</a>
+                                <a href=""
+                                    class="text-white hover:text-secondary transition-all duration-300 easy-out text-[14px]">Galeri</a>
+
+                            </nav>
+                            <nav class="flex flex-col gap-3">
+                                <h6 class="text-xl text-white font-bold">Follow Us</h6>
+                                <div class="flex gap-3">
+                                    <a target="_blank" href="https://www.facebook.com/launcadental"><img
+                                            src="https://cdnus.globalso.com/launcadental/sns_1.png"
+                                            class="hover:rotate-45 duration-[600ms] transition-all easy-in-out"
+                                            alt="Facebook"></a>
+                                    <a target="_blank" href="https://www.linkedin.com/company/launca-medical/"><img
+                                            src="https://cdnus.globalso.com/launcadental/sns_2.png"
+                                            class="hover:rotate-45 duration-[600ms] transition-all easy-in-out"
+                                            alt="LinkedIn"></a>
+                                    <a target="_blank" href="https://youtube.com/@launcamedical"><img
+                                            src="https://cdnus.globalso.com/launcadental/sns_3.png"
+                                            class="hover:rotate-45 duration-[600ms] transition-all easy-in-out"
+                                            alt="YouTube"></a>
+                                    <a target="_blank" href="https://www.instagram.com/launca_medical/"><img
+                                            src="https://cdnus.globalso.com/launcadental/sns_4.png"
+                                            class="hover:rotate-45 duration-[600ms] transition-all easy-in-out"
+                                            alt="Instagram"></a>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-[37px] text-center mt-10 text-white">Get a Free Quote</h4>
+                        <p class="py-10 text-xl text-center text-white">Please leave your email and send us a message.
+                        </p>
+                        <form action="" class="flex flex-col gap-10">
+                            <div class="flex flex-row justify-between gap-10">
+                                <input type="text" class="w-full p-4 rounded-md" placeholder="Your Name">
+                                <input type="email" class="w-full p-4 rounded-md" placeholder="Email">
+                            </div>
+                            <input type="text" class="w-full p-4 rounded-md"
+                                placeholder="Subject (e.g. Info/Quote/Demo/Other) ">
+                            <textarea name="" id="" cols="10" rows="4" class="w-full p-4 rounded-md"
+                                placeholder="Message
+*Please provide us with your country, job title, and mobile number. This will help us understand your background and better serve you."></textarea>
+                            <button class="bg-secondary text-white py-3 px-5 w-1/3 text-lg rounded-lg">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <div class="bg-primary">
+        <div class="container">
+            <div class="flex justify-between  items-center py-6 pb-20 max-lg:flex-col">
+                <div class="copyright text-white">
+                    Copyright Guangdong Launca Medical Device Technology&nbsp;Co., Ltd. All rights reserved. <a
+                        href="/sitemap.xml">Sitemap</a>, <a href="https://www.launcadental.com/oral-scanner/"
+                        title="oral scanner">oral scanner</a>,
+                    <a href="https://www.launcadental.com/3d-teeth-scanner/" title="3d teeth scanner">3d teeth
+                        scanner</a>,
+                    <a href="https://www.launcadental.com/dental-intraoral-scanner/"
+                        title="dental intraoral scanner">dental
+                        intraoral scanner</a>,
+                    <a href="https://www.launcadental.com/digital-dental-scanner/"
+                        title="digital dental scanner">digital dental
+                        scanner</a>,
+                    <a href="https://www.launcadental.com/dental-scanner/" title="dental scanner">dental scanner</a>,
+                    <a href="https://www.launcadental.com/intraoral-scanner/" title="intraoral scanner">intraoral
+                        scanner</a>, <a href="/products/">All Products</a>
+                </div>
+                <a href="https://moonworkshop.com/">
+                    <img src="https://moonworkshop.com/img/dijital-reklam-ajansi/moonworkshop_white.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- special adding -->
+    <!-- wp start-->
+    <div>
+        <div class="" id="">
+            <div class="whatsapp-main">
+                <div type="floating" class="whatsapp-wrapper hide-whatsapp" style="width: 360px">
+                    <div color="rgb(29, 33, 41)" role="button" tabindex="0" class="close_whatsapp"></div>
+                    <div class="whatsapp-header">
+                        <div size="52" class="support-avatar">
+                            <div class="avatar-wrapper">
+                                <div class="avatar-img" style="
+                      background-image: url(https://ozaytarim.moonsunum.com/upload/settings/logo-1.webp);
+                    "></div>
+                            </div>
+                        </div>
+                        <div class="header-info">
+                            <div class="whatsapp-name">OZAY GROUP TARIM</div>
+                            <div class="whatsapp-reply-time">Çevrimiçi</div>
+                        </div>
+                    </div>
+                    <div class="whatsapp-background">
+                        <div class="whatsapp-message-container">
+                            <div class="loading-animation">
+                                <div class="dot-pulse"></div>
+                            </div>
+                            <div class="whatsapp-message-wrapper">
+                                <div class="chat-body-wrapper">
+                                    <div class="whatsapp-chat-name">OZAY GROUP TARIM</div>
+                                    <div class="whatsapp-chat-message">
+                                        <div>
+                                            <p>deneme</p>
+                                        </div>
+                                    </div>
+                                    <div class="whatsapp-chat-time">16:54</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/902425027007?text=deneme" title="WhatsApp" class="whatsapp-btn" role="button"
+                        target="popup"
+                        onclick="window.open('https://wa.me/902425027007?text=deneme','popup','width=700,height=600'); return false;">
+                        <svg class="whatsapp-send-icon-small" xmlns="http://www.w3.org/2000/svg" version="1" height="20"
+                            viewBox="0 0 90 90">
+                            <path
+                                d="M90 44a44 44 0 0 1-66 38L0 90l8-24A44 44 0 0 1 46 0c24 0 44 20 44 44zM46 7C25 7 9 24 9 44c0 8 2 15 7 21l-5 14 14-4a37 37 0 0 0 58-31C83 24 66 7 46 7zm22 47l-2-1-7-4-3 1-3 4h-3c-1 0-4-1-8-5-3-3-6-6-6-8v-2l2-2 1-1v-2l-4-8c0-2-1-2-2-2h-2l-3 1c-1 1-4 4-4 9s4 11 5 11c0 1 7 12 18 16 11 5 11 3 13 3s7-2 7-5l1-5z"
+                                fill="#FFF" />
+                        </svg>
+                        <span class="chat-button-text">Whatsapp Sohbet</span>
+                    </a>
+                    <div style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              "></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <headers>
+        <a style="background-color: #122e5c" href="tel:902425027007" class="callnow">
+            <i class="fas fa-phone-alt" style="padding-right: 5px; transform: rotate(0deg)"></i>
+            HEMEN ARA
+        </a>
+        <div class="whatsappx">
+            <div class="whatsapp-popup-button play-btn" id="whatsapp-popup">
+                <div class="whatsapp-button-main">WHATSAPP</div>
+            </div>
+        </div>
+    </headers>
+    <button id="scrollToTopBtn"
+        class="fixed max-lg:!hidden right-5 text-white bottom-5 z-10 border border-white p-3 ">Top</button>
+    <div class="flex flex-col">
+        <div class="group">
+            <div
+                class="fixed right-[-110px] max-lg:right-[-50px] group-hover:right-0 transition-all duration-300 easy-in-out top-[45%] max-lg:top-[42%] z-50">
+                <div class="flex flex-row items-center">
+                    <div class="hidden group-hover:block">
+                        <a href=""
+                            class="border-t-2 border-secondary py-4 px-3 bg-white text-black mr-3 max-lg:text-sm ">+86-755-8228
+                            0012</a>
+                    </div>
+                    <div
+                        class="flex flew-row gap-10 items-center cursor-pointer max-lg:gap-1 bg-secondary rounded-l-full">
+                        <span><img src="img/rightFixed/dhh.png" alt="phone"
+                                class="bg-white p-2 rounded-full m-2"></span>
+                        <span class="text-white pr-5 max-lg:text-sm  max-lg:pr-1">Phone</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="group">
+            <div
+                class="fixed right-[-110px] group-hover:right-0 transition-all duration-300 easy-in-out top-[52%] max-lg:top-[50%] z-50">
+                <div class="flex flex-row items-center">
+                    <div class="hidden group-hover:block">
+                        <a href=""
+                            class="border-t-2 border-secondary py-4 max-lg:px-1 max-lg:text-sm px-3 bg-white text-black mr-3 max-lg:mr-0">efax@launcamedical.com</a>
+                    </div>
+                    <div class="flex flew-row gap-10 items-center cursor-pointer bg-secondary rounded-l-full">
+                        <span><img src="img/rightFixed/yxx.png" alt="mail" class="bg-white p-2 rounded-full m-2"></span>
+                        <span class="text-white pr-5 max-lg:text-sm">E-mail</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="group">
+            <div
+                class="fixed right-[-130px] group-hover:right-0 transition-all duration-300 easy-in-out top-[59%] max-lg:top-[58%] z-50">
+                <div class="flex flex-row items-center">
+                    <div class="hidden group-hover:block">
+                        <a href="" class="border-t-2 border-secondary py-4 px-3 bg-white text-black mr-3">Youtube</a>
+                    </div>
+                    <div class="flex flew-row gap-10 items-center cursor-pointer bg-secondary rounded-l-full">
+                        <span><img src="img/rightFixed/ytb.png" alt="Youtube"
+                                class="bg-white p-2 rounded-full m-2"></span>
+                        <span class="text-white pr-5">Youtube</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="group">
+            <div
+                class="fixed right-[-140px] group-hover:right-0 transition-all duration-300 easy-in-out top-[66%] max-lg:top[80%] z-50">
+                <div class="flex flex-row items-center">
+                    <div class="hidden group-hover:block">
+                        <a href="" class="border-t-2 border-secondary py-4 px-3 bg-white text-black mr-3">Facebook</a>
+                    </div>
+                    <div class="flex flew-row gap-10 items-center cursor-pointer bg-secondary rounded-l-full">
+                        <span><img src="img/rightFixed/fcb.png" alt="Facebook"
+                                class="bg-white p-2 rounded-full m-2"></span>
+                        <span class="text-white pr-5">Facebook</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- wp end-->
+
+    <!-- special adding -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
