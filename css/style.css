@@ -1852,3 +1852,154 @@ div.page_team div.layout.flex_row div.team_item div.icon:hover img {
     left: auto !important;
   }
 }
+
+/* service_sepc_warp */
+.service_sepc_warp {
+    margin: 102px 0 116px;
+}
+
+.service_title {
+    font-size: 48px;
+    line-height: 1;
+    color: #000000;
+    font-weight: normal;
+    text-align: center;
+    font-family: 'Poppins-Bold'
+}
+
+.service_sepc_list {
+    margin-top: 44px;
+}
+
+.service_sepc_list li {
+    width: 100%;
+    display: table;
+    font-size: 24px;
+    padding: 13.5px 0;
+    line-height: 1.5;
+    color: #4b4b4b;
+    background: #f7f8fc
+}
+
+.service_sepc_list li:nth-child(even) {
+    background-color: #fff
+}
+
+.service_sepc_list li em {
+    display: table-cell;
+    width: 50%;
+    padding-left: 18%
+}
+
+.service_sepc_list li span {
+    display: table-cell;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-wrap: break-word;
+    width: 50%;
+    padding-left: 7%
+}
+
+/* service_explore_warp */
+.service_explore_warp {
+}
+
+.service_explore_main {
+    margin-top: 51px
+}
+
+.service_explore_box {
+    padding: 0 58px;
+    position: relative;
+}
+
+.service_explore_swiper {
+}
+
+.service_explore_slide {
+    background: #f7f8fc;
+    text-align: center
+}
+
+.service_explore_slide a {
+    padding: 15px 2% 37px
+}
+
+.service_explore_slide a .item_text {
+    margin-top: 40px
+}
+
+.service_explore_slide a .item_text h2 {
+    font-size: 28px;
+    line-height: 1.2;
+    color: #000000;
+    font-weight: normal;
+    font-family: 'Poppins-Bold'
+}
+
+.service_explore_slide a .item_text p {
+    font-size: 16px;
+    line-height: 31px;
+    color: #4b4b4b
+}
+
+.service_explore_btn {
+    text-align: center;
+    margin: 63px 0 99px;
+}
+
+.service_explore_btn a {
+    width: 164px;
+    height: 39px;
+    line-height: 39px;
+    font-size: 18px;
+    margin: 0 23px;
+    color: #fff;
+    background-color: #f5a200;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 5px;
+    font-family: 'Poppins-SemiBold';
+    border: 1px solid #f5a200
+}
+
+.service_explore_btn a:hover {
+    background-color: transparent;
+    color: #f5a200
+}
+
+.service_explore_box .swiper_prev,.service_explore_box .swiper_next {
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 35px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    z-index: 9;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.service_explore_box .swiper_prev {
+    left: 0px;
+    background-image: url(img/servicepg_icon03.png);
+}
+
+.service_explore_box .swiper_next {
+    right: 0px;
+    background-image: url(img/servicepg_icon04.png);
+}
+
+.service_explore_box .swiper_prev img,.service_explore_box .swiper_next img {
+    width: auto;
+}
+
+.main .page_titlelp {
+    text-align: center;
+    font-size: 34px;
+    color: #2980b9;
+}
